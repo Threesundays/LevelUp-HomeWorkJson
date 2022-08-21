@@ -1,3 +1,5 @@
+package home.task.serelization;
+
 import com.google.gson.Gson;
 
 import java.io.*;
@@ -24,14 +26,19 @@ public class Main {
         System.out.println("------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
 
 
-        for (int i = 0; i < users.size(); i++) {
-            User user = users.get(i);
-            String json = new Gson().toJson(user);
-            System.out.println(json);
-
-
-        }
-
+//        for (int i = 0; i < users.size(); i++) {
+//            User user = users.get(i);
+//            String json = new Gson().toJson(user);
+//            System.out.println(json);
+//
+//
+//        }
+        users.forEach(user ->
+                {
+                    String s = new Gson().toJson(user);
+                    System.out.println(s);
+                }
+        );
 
 
     }

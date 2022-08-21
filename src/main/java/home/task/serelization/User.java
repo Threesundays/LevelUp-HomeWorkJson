@@ -1,3 +1,5 @@
+package home.task.serelization;
+
 import java.util.Objects;
 
 public class User {
@@ -60,7 +62,7 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" +
+        return "home.task.serelization.User{" +
                 "login='" + login + '\'' +
                 ", name='" + name + '\'' +
                 ", age=" + age +
